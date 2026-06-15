@@ -38,3 +38,6 @@ CrowdSec separates detection (the engine) from remediation (the bouncers) via a 
 2. **Parser Engine** ➔ Compares lines against HTTP/DDoS scenarios
 3. **Database & LAPI** ➔ SQLite commits malicious IP ➔ Exposes endpoint to Bouncers
 4. **CAPI Coordination** ➔ Syncs threat signatures out-of-band with global intelligence pools
+
+
+Blocked a 1000+ Hostile-IPs in 90 days
