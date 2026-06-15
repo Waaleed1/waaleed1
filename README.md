@@ -56,5 +56,5 @@ A DevOps and Network Engineering specialist focused on building **zero-trust inf
 ---
 
 ## 📫 How to reach me
-* **LinkedIn:** [Your Name](https://linkedin.com/in/yourprofile)
-* **Email:** your.email@example.com
+* **LinkedIn:** [Kareem ahmed](https://www.linkedin.com/in/kareem-atteia-644661257)
+* **Email:** kareem.ahmed.bahaa@gmail.com
