@@ -34,7 +34,7 @@ tailscale:
     container_name: crowdsec
     restart: unless-stopped
     environment:
-      # These "collections" tell CrowdSec what to look for (Nginx attacks, etc.)
+
       - COLLECTIONS=crowdsecurity/nginx crowdsecurity/http-cve crowdsecurity/base-http-scenarios
       - LAPI_LISTEN_ADDR=127.0.0.1:8081
       - DOWNLOAD_GEOLITE_ASN=true
@@ -43,9 +43,9 @@ tailscale:
     volumes:
       - ./crowdsec/config:/etc/crowdsec
       - crowdsec-db:/var/lib/crowdsec
-      # IMPORTANT: Point this to where your NPM logs live
+
       - ./data/logs:/var/log/nginx:ro
-    network_mode: "host" # Keeps it on the same network as your NPM/Headscale setup
+    network_mode: "host" 
 
 volumes:
   crowdsec-db:
