@@ -1,8 +1,10 @@
 🔐 Identity Provider Layer: Dex OIDC Identity Broker
+
 This configuration deploys Dex as a lightweight, federated identity layer running natively on the host system. It bridges the Headplane dashboard with GitHub’s OAuth2 API, enabling secure Single Sign-On (SSO) for managing the private tailnet.
 
 [ Headplane ]  --(OIDC Protocol)-->  [ Dex (Port 5556) ]  --(OAuth2)-->  [ GitHub API ]
 🏗️ Architectural Breakdown
+
 1. Core Provider & Storage (issuer: & storage:)
 Issuer URL: The public-facing domain where Dex listens for OIDC requests. Headplane sends users here when they click "Login".
 
