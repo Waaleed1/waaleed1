@@ -42,6 +42,9 @@ extra_hosts: (Static DNS Injection): This injects custom lines directly into the
 YAML
 - "minio-node1:<Primary server IP>"
 - "minio-node2:<Secondary server IP>"
+
+
+
 This acts as an embedded, zero-dependency DNS system. It allows the containers to resolve the exact LAN or public IP addresses of your physical primary and secondary servers using the human-readable aliases (minio-node1 and minio-node2) defined in the boot command.
 
 3. Data Persistence (volumes:)
