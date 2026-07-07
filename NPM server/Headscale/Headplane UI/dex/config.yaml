@@ -1,0 +1,24 @@
+issuer: <Your dex domain>
+storage:
+  type: sqlite3
+  config:
+    file: /var/lib/dex/dex.db
+
+web:
+  http: 127.0.0.1:5556
+
+staticClients:
+  - id: <your client ID>
+    secret: '<your client secret>'
+    name: 'Headplane'
+    redirectURIs:
+      - '<headscale callback URL>'
+
+connectors:
+  - type: github
+    id: github
+    name: GitHub
+    config:
+      clientID: "<github client ID>"
+      clientSecret: "<github client secret>"
+      redirectURI: "<headscale callback URL>"
