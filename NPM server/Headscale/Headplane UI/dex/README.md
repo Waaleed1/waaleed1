@@ -5,6 +5,8 @@
 This configuration deploys Dex as a lightweight, federated identity layer running natively on the host system. It bridges the Headplane dashboard with GitHub’s OAuth2 API, enabling secure Single Sign-On (SSO) for managing the private tailnet.
 
 [ Headplane ]  --(OIDC Protocol)-->  [ Dex (Port 5556) ]  --(OAuth2)-->  [ GitHub API ]
+
+
 🏗️ Architectural Breakdown
 
 1. Core Provider & Storage (issuer: & storage:)
@@ -30,6 +32,7 @@ GitHub Connector: Configures GitHub as the upstream identity source.
 GitHub Credentials (clientID/clientSecret): The application keys generated inside the GitHub Developer Settings panel.
 
 OAuth Callback (redirectURI): The specific endpoint where GitHub returns the user after they successfully authorize via their GitHub account. Dex captures this response, translates it into an official OIDC token, and hands it off to Headplane.
+
 
 💡 Key Design Choices Explained:
 
