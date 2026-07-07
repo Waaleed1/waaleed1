@@ -1,0 +1,20 @@
+services:
+  minio:
+    image: quay.io/minio/minio
+    restart: unless-stopped
+    command: server
+      http://minio-node1:9000/data
+      http://minio-node2:9000/data
+      --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: <Your user>
+      MINIO_ROOT_PASSWORD: <Your user password>
+    hostname: minio-node1
+    extra_hosts:
+      - "minio-node1:<Primary server IP>"
+      - "minio-node2:<Secondary server IP>"
+    volumes:
+      - /opt/minio/data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
