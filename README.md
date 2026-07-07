@@ -51,7 +51,8 @@ A DevOps and Network Engineering specialist focused on building **zero-trust inf
 * **Infrastructure Design:** High-Availability (HA), Zero-Trust Network Architecture (ZTNA)
 
 ---
-<img width="723" height="831" alt="Untitled Diagram" src="https://github.com/user-attachments/assets/cf766bfd-85a8-4b22-80fd-ea7e6e11685a" />
+<img width="1333" height="831" alt="Untitled Diagram (1)" src="https://github.com/user-attachments/assets/8fbcd801-7037-4dec-91b1-13933bc82db4" />
+
 
 ---
 
