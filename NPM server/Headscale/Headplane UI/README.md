@@ -1,4 +1,5 @@
 🛠️ Project Component: Headplane Orchestration Layer
+
 This configuration manages Headplane, a modern web-based dashboard and control plane UI for Headscale (the open-source, self-hosted alternative to Tailscale's coordination server).
 
 Instead of relying on Docker isolation, this deployment is architected natively on the host OS, leveraging direct system process controls (proc), custom agent integrations, and federated identity management via an OIDC provider (Dex + GitHub).
