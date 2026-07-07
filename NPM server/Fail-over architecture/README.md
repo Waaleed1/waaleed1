@@ -23,6 +23,8 @@ The Pipeline: Litestream immediately ships these incremental cryptographic chunk
 The Secondary Node (The Reader): On the secondary server, Litestream is configured in restore/replicate mode. It constantly monitors the MinIO bucket. The moment it detects a new WAL frame from the primary server, it pulls it down and applies it to the secondary server's local SQLite file.
 
 🔄 The Failover Event: What Happens When Primary Dies?
+
+
 If your Primary Server experiences a catastrophic hardware failure, your automated or manual failover protocol triggers the following sequence:
 
 Traffic Rerouting: Your upstream reverse proxy/DNS router shifts its backend target from the Primary IP to the Secondary IP.
