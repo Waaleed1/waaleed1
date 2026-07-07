@@ -1,7 +1,13 @@
 📦 Distributed Object Storage Layer: MinIO Multi-Node Cluster
+
+
 This configuration sets up a resilient, distributed instance of MinIO Object Storage running inside Docker. It breaks out of a single-machine boundary by linking local storage engines across two distinct host nodes (Primary and Secondary servers) into a unified, high-availability storage cluster.
 
+
+
 🏗️ Architectural Breakdown
+
+
 1. Cluster Cohesion & Command Execution (command:)
 The core magic of the multi-node sync happens right here in the boot command:
 
